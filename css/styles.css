@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery {
+    width: 1128px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 24px auto;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.gallery-image {
+    width: 360px;
+    max-height: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
